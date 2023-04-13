@@ -1,0 +1,569 @@
+
+
+/*------------------ Navbar container---------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c53ed;
+  padding: 10px;
+}
+
+/* Home icon */
+.navbar a.active {
+  background-color: #ffecde;
+  color: #ef6603;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Dropdown button */
+.dropbtn {
+  background-color: #0c53ed;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #444444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ef6603;
+  color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*------------------ Section 1 - Slider-------------- */
+#sectionPage {
+  background-color: #ffecde;
+  padding: 50px;
+}
+
+.slider {
+  display: block;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider img:first-child {
+  opacity: 1;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+/*----------------  Sign Up Button -----------------*/
+
+.signup {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.signup button {
+  background-color: #ef6603;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.signup button:hover {
+  background-color: #def1ff;
+  color: #444444;
+}
+
+/* Responsive design */
+@media screen and (max-width: 375px) {
+  .navbar a {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .navbar a.active {
+    padding: 5px;
+  }
+
+  .dropdown-content a {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .dropdown-content {
+    min-width: 100px;
+  }
+
+  .dropbtn {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .slider {
+    height: 250px;
+  }
+
+  .signup {
+    margin-top: 30px;
+  }
+
+  .signup button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/*----------------------- for section 2------------------------------- */
+#section2 {
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+
+#section2 h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+#section2 ul {
+  list-style-type: disc;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#section2 li {
+  margin-left: 30px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.button-wrapper button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+.button-wrapper button:hover {
+  background-color: #555;
+}
+
+/*----------------- for section 3 ----------------------------------*/
+
+/* Remove default styles for tab buttons */
+.tab button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Add a grey background color to the active tab button */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Hide all tab content by default */
+.tabcontent {
+  display: none;
+}
+
+/* Style the images inside the tab content */
+.tabcontent img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+/* Style the paragraphs inside the tab content */
+.tabcontent p {
+  text-align: center;
+  color: #444444;
+  margin: 20px 0;
+}
+
+/* Style the details div inside the tab content */
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style the detail images inside the details div */
+.details img {
+  display: block;
+  margin: 10px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+/* Style the detail paragraphs inside the details div */
+.details p {
+  text-align: center;
+  margin: 10px;
+}
+
+/* Style the tab buttons */
+.tab button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Style the active tab button */
+.tab button.active {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the section heading */
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* Style the section container */
+section {
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .tab button {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .details img {
+    margin: 10px 5px;
+  }
+}
+
+/*----------------- section 4 css --------------------------*/
+/* Set the section to full screen height */
+.bg-transparent {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Set the background image */
+  .bg-image {
+    background-image: url('https://images.unsplash.com/photo-1593537084345-84c9427518af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw5NjMxOTUwfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60    ');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3; /* set the opacity to make it transparent */
+    z-index: -1; /* set the z-index to send it behind the content */
+  }
+  
+  /* Style the content */
+  .content {
+    padding: 2rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 1; /* set the z-index to bring it in front of the background */
+  }
+  
+  /* Set the font and background colors */
+  h2, p {
+    color: #ffffff;
+  }
+  
+  /* Set the background color for the section */
+  .bg-transparent {
+    background-color: rgba(0,0,0,0.5); /* set the background color and opacity */
+  }
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 767px) {
+    .content {
+      padding: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+
+  /*-------------------- setion 5 ---------------------------*/
+
+  /* Style the team section */
+.team{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#team {
+    padding: 3rem 0;
+  }
+  
+  .card {
+    border: none;
+    text-align: center;
+  }
+  
+  .card-img-top {
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .card-title {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  .card-text {
+    color: #999;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Media queries for mobile view */
+@media (max-width: 375px) {
+    #team {
+      padding: 1rem 0;
+    }
+    
+    .card {
+      margin-bottom: 2rem;
+    }
+    
+    .card-img-top {
+      max-width: 100px;
+    }
+    
+    .card-title {
+      font-size: 1rem;
+    }
+    
+    .card-text {
+      font-size: 0.8rem;
+    }
+  }
+
+  /*--------------------- section 6 -----------------------------*/
+
+
+  /* Style the container */
+  .container {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333333;
+  }
+  
+  .contact-item {
+    margin-bottom: 20px;
+  }
+  
+  .contact-item i {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .contact-item h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+  
+  .contact-item p {
+    font-size: 1.1rem;
+    color: #666666;
+  }
+  
+  form label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333333;
+  }
+  
+  form input,
+  form textarea {
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
+  }
+  
+  form textarea {
+    height: 150px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0062cc;
+  }
+
+  /* --------------------------------------section 7 footer------------------------------------- */
+
+ /* custom styles for the footer section */
+
+.footer {
+    background-color: #0c53ed;
+    padding: 50px 0;
+    position: relative;
+  }
+  
+  .footer h3 {
+    font-size: 24px;
+    color: #444444;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    font-size: 16px;
+    color: #444444;;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    color:  #ffffff;
+    background-color:   #ef6603;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(-5px);
+  }
+  
+  .scroll-up {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ef6603;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .scroll-up:hover {
+    transform: translateY(-5px);
+  }
+  
+  .scroll-up i {
+    font-size: 24px;
+    color:  #ffffff;
+  }
+  
+  
+  
